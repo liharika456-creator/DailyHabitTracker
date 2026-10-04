@@ -1,0 +1,205 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Daily Habit Tracker</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+
+        <!-- =========================
+             HEADER
+        ========================== -->
+
+        <header>
+
+            <h1>Daily Habit Tracker</h1>
+
+            <p>
+                Build better habits, one day at a time!
+            </p>
+
+        </header>
+
+
+        <!-- =========================
+             DASHBOARD
+        ========================== -->
+
+        <section class="dashboard">
+
+            <div class="card">
+
+                <h3>Total Habits</h3>
+
+                <p id="totalHabits">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Completed</h3>
+
+                <p id="completedHabits">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Progress</h3>
+
+                <p id="progress">
+                    0%
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ADD HABIT
+        ========================== -->
+
+        <section class="habit-form">
+
+            <h2>Add a New Habit</h2>
+
+            <form id="habitForm">
+
+                <input
+                    type="text"
+                    id="habitName"
+                    placeholder="Enter your habit"
+                    required
+                >
+
+                <button type="submit">
+                    Add Habit
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
+        <div class="main-content">
+
+
+            <!-- =========================
+                 LEFT SIDE
+            ========================== -->
+
+            <div class="habit-content">
+
+
+                <!-- ACTIVE HABITS -->
+
+                <section class="habit-section">
+
+                    <h2>
+                        My Daily Habits
+                    </h2>
+
+                    <div id="habitList">
+
+                        <p class="empty-message">
+                            No habits added yet.
+                            Start your journey!
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+                <!-- COMPLETED TODAY -->
+
+                <section class="completed-section">
+
+                    <h2>
+                        Completed Today
+                    </h2>
+
+                    <div id="completedTodayList">
+
+                        <p class="empty-message">
+                            No habits completed today yet.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+            </div>
+
+
+            <!-- =========================
+                 RIGHT SIDE
+            ========================== -->
+
+            <aside class="history-panel">
+
+
+                <button
+                    id="historyButton"
+                    type="button"
+                >
+                    View Completed History
+                </button>
+
+
+                <button
+                    id="clearHistoryButton"
+                    type="button"
+                >
+                    🗑️ Clear Completed History
+                </button>
+
+
+                <div id="historyList"></div>
+
+
+            </aside>
+
+
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
